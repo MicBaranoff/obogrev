@@ -125,6 +125,10 @@ section,
 main {
   display: block;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -173,9 +177,6 @@ h1 {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-}
-section {
-  overflow-x: hidden;
 }
 header {
   padding: 0 15px;
@@ -1959,7 +1960,7 @@ section.interior .holder .right .imgslider .slide {
 section.interior .holder .right .imgslider .slide img {
   width: 100%;
 }
-section.interior .holder p {
+section.interior .holder > p {
   font-family: CeraPro;
   font-style: normal;
   font-weight: 500;
@@ -2298,6 +2299,7 @@ section.clients .holder .clientsSlider .slide .text {
 }
 section.clients .holder .clientsSlider .slide .text.active {
   height: auto;
+  overflow-y: ;
 }
 section.clients .holder .clientsSlider .slide .text p {
   font-family: CeraPro;
@@ -2556,6 +2558,7 @@ footer .holder > .box .socials {
 footer .footer-btm {
   width: 100%;
   max-width: 1320px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2564,6 +2567,36 @@ footer .footer-btm {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+footer .footer-btm .socials {
+  width: 144px;
+}
+footer .footer-btm .socials span {
+  display: block;
+  font-family: CeraPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: #C4C4C4;
+}
+footer .footer-btm .socials .box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-btm .socials .box a {
+  margin: 0 15px;
 }
 footer .footer-btm .clmnlogos {
   width: 100%;
@@ -2641,7 +2674,10 @@ footer .footer-btm .clmndelivery {
   width: 100%;
   max-width: 170px;
 }
-footer .footer-btm .clmndelivery p.title {
+footer .footer-btm .clmndelivery .socials {
+  display: none;
+}
+footer .footer-btm .clmndelivery > .box p.title {
   display: block;
   margin-bottom: 30px;
   font-family: CeraPro;
@@ -2653,7 +2689,7 @@ footer .footer-btm .clmndelivery p.title {
   color: #C4C4C4;
   margin-bottom: 23px;
 }
-footer .footer-btm .clmndelivery span {
+footer .footer-btm .clmndelivery > .box span {
   display: block;
   margin-top: 11px;
   font-family: CeraPro;
@@ -2765,6 +2801,25 @@ footer .footer-btm .clmnplace .goup:hover svg {
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
+}
+footer .rights {
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .rights span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: rgba(196, 196, 196, 0.45);
 }
 .modal {
   position: fixed;
@@ -3319,7 +3374,7 @@ footer .footer-btm .clmnplace .goup:hover svg {
   }
   section.numbers {
     padding-bottom: 110px;
-    border-radius: 0 0 30% 0;
+    border-radius: 0 0 100px 0;
     background-size: 110% 100%;
   }
   section.numbers .holder {
@@ -3521,6 +3576,9 @@ footer .footer-btm .clmnplace .goup:hover svg {
     text-align: center;
     letter-spacing: 0.01em;
     color: #000000;
+  }
+  section.lists {
+    padding-bottom: 0;
   }
   section.lists > img {
     display: none;
@@ -3734,5 +3792,633 @@ footer .footer-btm .clmnplace .goup:hover svg {
     -webkit-transform: translateY(10px);
         -ms-transform: translateY(10px);
             transform: translateY(10px);
+  }
+  section.catalog {
+    height: auto ;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 58px;
+  }
+  section.catalog h2 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  section.catalog .holder {
+    max-width: 320px;
+  }
+  section.catalog .holder .item .title h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 149.7%;
+    /* or 21px */
+    letter-spacing: 0.01em;
+    color: #1A1A1A;
+  }
+  section.catalog .holder .item .title h3 .yel {
+    color: #FECA00;
+  }
+  section.catalog .holder .item .title h3 br {
+    display: none;
+  }
+  section.catalog .holder .item > .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.catalog .holder .item > .box .left {
+    background-image: url(../img/bgslideritem-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  section.catalog .holder .item > .box .left .bigphotoSlider {
+    max-width: 130px;
+  }
+  section.catalog .holder .item > .box .left .bigphotoSlider-nav {
+    width: 210px;
+  }
+  section.catalog .holder .item > .box .left .bigphotoSlider-nav .slide {
+    width: 45px;
+    height: 45px;
+  }
+  section.catalog .holder .item > .box .left .bigphotoSlider-nav .slide img {
+    width: 50%;
+  }
+  section.catalog .holder .item > .box .right {
+    max-width: 289px;
+    height: auto;
+    margin: 0;
+  }
+  section.catalog .holder .item > .box .right .tablebox .imgcol {
+    display: none;
+  }
+  section.catalog .holder .item > .box .right .tablebox .namescol {
+    max-width: 106px;
+    min-width: 106px;
+  }
+  section.catalog .holder .item > .box .right .tablebox .namescol p.title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+  section.catalog .holder .item > .box .right .tablebox .namescol p.name {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    /* identical to box height */
+    white-space: normal;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+  }
+  section.catalog .holder .item > .box .right .tablebox .namescol span {
+    font-size: 6px;
+    line-height: 8px;
+    letter-spacing: 0.01em;
+  }
+  section.catalog .holder .item > .box .right .tablebox .infocol {
+    max-width: 60px;
+  }
+  section.catalog .holder .item > .box .right .tablebox .infocol p.title {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+  }
+  section.catalog .holder .item > .box .right .tablebox .infocol p.inf {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+  }
+  section.catalog .holder .item > .box .right .tablebox .infocol p.inf.price {
+    margin-top: 20px;
+    font-family: CeraProM;
+  }
+  section.catalog .holder .item > .box .right .tablebox .infocol a.btn {
+    background: #FEBD00;
+    -webkit-box-shadow: 0px 4px 7px rgba(254, 189, 0, 0.29);
+            box-shadow: 0px 4px 7px rgba(254, 189, 0, 0.29);
+    border-radius: 10px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: #313131;
+  }
+  section.gift {
+    height: auto ;
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 27px;
+    border-radius: 30% 0 0 0;
+  }
+  section.gift .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.gift .holder .text {
+    max-width: 266px;
+  }
+  section.gift .holder .text h2 {
+    font-family: CeraProM;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 31px;
+    letter-spacing: 0.01em;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+  }
+  section.gift .holder .text p {
+    font-size: 14px;
+    line-height: 149.7%;
+    /* or 21px */
+    margin-bottom: 15px;
+    letter-spacing: 0.01em;
+  }
+  section.gift .holder .text a.btn-det {
+    background: #FFFFFF;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    font-weight: 500;
+    font-family: CeraProM;
+    border: none;
+    font-size: 15px;
+    line-height: 155.2%;
+    letter-spacing: 0.02em;
+    color: #161616;
+  }
+  section.gift .holder .img {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  section.gift .holder .img img {
+    -webkit-transform: translate(25px, 7px);
+        -ms-transform: translate(25px, 7px);
+            transform: translate(25px, 7px);
+  }
+  section.interior {
+    background-size: cover;
+    border-radius: 100px 0 0 0;
+  }
+  section.interior h2 {
+    font-family: CeraPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 110.3%;
+    margin-bottom: 15px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-left: 18%;
+    color: #FFFFFF;
+  }
+  section.interior .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.interior .holder .left {
+    width: 239px;
+  }
+  section.interior .holder .left .doorSlider {
+    width: 142px;
+  }
+  section.interior .holder .left .doorSlider .slide p.name {
+    font-family: CeraPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 149.7%;
+    /* identical to box height, or 18px */
+    letter-spacing: 0.01em;
+    color: #FEBD00;
+  }
+  section.interior .holder .left .doorSlider .slide .img {
+    height: 180px;
+  }
+  section.interior .holder .right {
+    max-width: 264px;
+    margin-top: 10px;
+  }
+  section.interior .holder .right .imgslider .slide {
+    height: 152px;
+  }
+  section.interior .holder > p {
+    font-family: CeraPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 149.7%;
+    /* or 18px */
+    text-align: center;
+    letter-spacing: 0.01em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    margin-top: 10px;
+    color: #FFFFFF;
+  }
+  section.knowwhy .holder {
+    max-width: 290px;
+  }
+  section.knowwhy .holder h2 {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: #252525;
+    margin-bottom: 20px;
+  }
+  section.knowwhy .holder .box .vid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.knowwhy .holder .box .vid .item {
+    margin-bottom: 10px;
+    height: 130px;
+  }
+  section.knowwhy .holder .box .imgs {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  section.knowwhy .holder .box .imgs .img {
+    max-width: 132px;
+    margin-bottom: 25px;
+  }
+  section.about {
+    background-size: cover;
+    border-radius: 0 100px 0 0;
+    padding: 20px 15px;
+  }
+  section.about .holder {
+    max-width: 290px;
+  }
+  section.about .holder > img {
+    width: 358.88px;
+    height: 268.16px;
+    top: 60%;
+    left: 12px;
+  }
+  section.about .holder h2 {
+    text-align: left;
+    font-size: 25px;
+    line-height: 155.2%;
+    /* identical to box height, or 39px */
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+  }
+  section.about .holder .box {
+    max-width: 290px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.about .holder .box .left {
+    margin-right: 0;
+  }
+  section.about .holder .box .left p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 145.2%;
+    /* or 20px */
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  section.about .holder .box .right {
+    margin-top: 20px;
+  }
+  section.about .holder .box .right .item {
+    margin-bottom: 30px;
+  }
+  section.about .holder .box .right .item svg {
+    margin-right: 22px;
+    min-width: 50px;
+    max-width: 50px;
+  }
+  section.about .holder .box .right .item img {
+    margin-top: 110px;
+    width: 114px;
+    height: 50px;
+  }
+  section.clients {
+    padding-top: 58px;
+  }
+  section.clients .holder {
+    position: relative;
+  }
+  section.clients .holder h2 {
+    font-size: 25px;
+    line-height: 105.7%;
+    letter-spacing: 0.01em;
+  }
+  section.clients .holder .arrows {
+    position: absolute;
+    z-index: 100;
+    top: 300px;
+  }
+  section.clients .holder .clientsSlider .slick-list .slick-track {
+    margin: 0 -6px;
+    padding: 6px;
+  }
+  section.clients .holder .clientsSlider .slide {
+    margin: 0;
+  }
+  section.clients .holder .clientsSlider .slide .img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  section.clients .holder .clientsSlider .slide p.name {
+    font-size: 18px;
+    line-height: 146.2%;
+    /* or 26px */
+    letter-spacing: 0.01em;
+  }
+  section.clients .holder .clientsSlider .slide p.who {
+    font-size: 15px;
+    line-height: 146.2%;
+    /* identical to box height, or 22px */
+    letter-spacing: 0.01em;
+  }
+  section.clients .holder .clientsSlider .slide .advantages,
+  section.clients .holder .clientsSlider .slide .disadvantages {
+    margin-bottom: 10px;
+  }
+  section.clients .holder .clientsSlider .slide .advantages .title,
+  section.clients .holder .clientsSlider .slide .disadvantages .title {
+    margin-bottom: 10px;
+  }
+  section.clients .holder .clientsSlider .slide .advantages > p,
+  section.clients .holder .clientsSlider .slide .disadvantages > p {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+  }
+  section.clients .holder .clientsSlider .slide .text {
+    height: 52px;
+  }
+  section.clients .holder .clientsSlider .slide .text > p {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.01em;
+  }
+  footer {
+    background-size: cover;
+    padding-top: 9px;
+    border-radius: 0 100px 0 0;
+  }
+  footer .holder {
+    max-width: 290px;
+  }
+  footer .holder h2 {
+    font-size: 25px;
+    line-height: 155.2%;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  footer .holder > .box {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  footer .holder > .box .form form {
+    padding-bottom: 26px;
+  }
+  footer .holder > .box .form form > button {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 202px;
+    height: 44px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 155.2%;
+    letter-spacing: 0.02em;
+    color: #161616;
+    border: none;
+  }
+  footer .holder > .box .contacts {
+    max-width: 190px;
+  }
+  footer .holder > .box .contacts .item {
+    margin-bottom: 20px;
+  }
+  footer .holder > .box .contacts .item svg {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-right: 10px;
+  }
+  footer .holder > .box .contacts .item .box a {
+    font-size: 12px;
+    line-height: 150.2%;
+    color: #FFFFFF;
+  }
+  footer .holder > .box .socials {
+    width: 30px;
+    height: 81px;
+  }
+  footer .holder > .box .socials svg {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+  footer .footer-btm {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  footer .footer-btm .clmnnav {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer .footer-btm .clmnnav a {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+  }
+  footer .footer-btm .clmnlogos {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 15px;
+  }
+  footer .footer-btm .clmnlogos .socials {
+    display: none;
+  }
+  footer .footer-btm .clmnlogos img {
+    width: 148px;
+    max-width: 148px;
+    height: 52px;
+  }
+  footer .footer-btm .clmndelivery {
+    width: 100%;
+    max-width: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 31px;
+  }
+  footer .footer-btm .clmndelivery .box p.title {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  footer .footer-btm .clmndelivery .socials {
+    display: block;
+  }
+  footer .footer-btm .clmndelivery .socials span {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer .footer-btm .clmnpay {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    max-width: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-top: 15px;
+  }
+  footer .footer-btm .clmnpay p.title {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  footer .footer-btm .clmnpay img {
+    margin-bottom: 10px;
+  }
+  footer .footer-btm .clmnpay img:last-child {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 126px;
+    height: 37px;
+  }
+  footer .footer-btm .clmnpay img:nth-child(3) {
+    width: 114px;
+    height: 20px;
+  }
+  footer .footer-btm .clmnpay img:nth-child(2) {
+    width: 118px;
+    height: 11px;
+  }
+  footer .footer-btm .clmnplace {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-top: 15px;
+    position: relative;
+    max-width: none;
+  }
+  footer .footer-btm .clmnplace p.title {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+  footer .footer-btm .clmnplace .goup {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+  footer .right {
+    margin-top: 26px;
   }
 }

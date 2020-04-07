@@ -76,9 +76,17 @@ $(document).ready(function(){
         prevArrow: '.clients .arrows .prev',
         nextArrow: '.clients .arrows .next',
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         adaptiveHeight: true,
-        asNavFor: '.doorSlider'
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
       $('.clientsSlider .slide .more').on('click',function(){
             $(this).parent().find('.text').addClass('active');
