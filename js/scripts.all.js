@@ -125,11 +125,79 @@ $(document).ready(function(){
 
       $('.modal .close').on('click', function(){
         $('.modal').removeClass('active');
+        $('.modal-video .modal-box .video iframe').remove();
       });
 
       $('.modal .goback').on('click', function(){
         $('.modal').removeClass('active');
       });
+
+
+      $('[modal-more-open]').on('click',function(){
+        $('.modal-more').addClass('active');
+  });
+
+  $('[modal-video-open]').on('click',function(){
+       let vid = $(this).find('.iframe').html();
+       console.log(vid)
+       $('.modal-video .modal-box .video').html(vid);
+        $('.modal-video').addClass('active');
+  });
+
+  $('[modal-delivery-open]').on('click',function(){
+    $('.modal-delivery').addClass('active');
+});
+
+$('[modal-order-open]').on('click',function(){
+  let val = $(this).parent().find('.price').text();
+  console.log(val);
+  $('.modal-order').find('.summval').text(val);
+  $('.modal-order').addClass('active');
+});
+
+$('[modal-participate-open]').on('click',function(){
+  $('.modal-participate').addClass('active');
+});
+
+$('.link').on('click', function(event) {
+  $('.menubox').removeClass('active');
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+  top = $(id).offset().top;
+  $('html, body').animate({scrollTop: top}, 800);
+  setTimeout(function() {
+    window.location = id;
+  }, 700);
+});
+
+$('.goup').click(function() {
+  $('html, body').animate({scrollTop: 0},500);
+  return false;
+});
+
+function countup(className) {
+  var countBlockTop = $("."+className).offset().top;
+  var windowHeight = window.innerHeight;
+  var show = true;
+        
+  $(window).scroll(function() {
+    if(show && (countBlockTop < $(window).scrollTop() + windowHeight)){ 
+      show = false;
+          
+      $('.'+className).spincrement({
+        from: 1,
+        duration: 4000,
+      });
+    }
+  })	
+}
+  // иниацизация классов счетчика
+  $(function() {
+      countup("count1", $(".count1").text());
+      countup("count2", $(".count2").text());
+      countup("count3", $(".count2").text());
+  });
+
 
       
 });

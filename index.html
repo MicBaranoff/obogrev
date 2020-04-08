@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/ico.png" type="image/png">
+    <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="libs/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -91,14 +93,23 @@
   </svg>
   
      </div>
+     <div class="langs">
+      <span class="active">Укр</span>
+      <span>Рус</span>
+      <span>Eng</span>
+      
+   <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M1 1.5L6 6.5L11 1.5" stroke="#25282B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+     </svg>
 
+    </div>
      <div class="holder">
        <nav>
-        <a href="">Каталог</a>
-        <a href="">Видео/Сертификаты</a>
-        <a href="">Контакты</a>
-        <a href="">О компании</a>
-        <a href="">Дарим 500грн</a>
+        <a class="link" href="#catalog">Каталог</a>
+        <a class="link" href="#video">Видео/Сертификаты</a>
+        <a class="link" href="#contacts">Контакты</a>
+        <a class="link" href="#about">О компании</a>
+        <a class="link" href="#gift">Дарим 500грн</a>
        </nav>
        <div class="line"></div>
        <div class="contactsu">
@@ -183,6 +194,7 @@
    <section class="mainbanner">
     
     <div class="holder">
+      <img src="img/pattern.png" alt="" class="shape">
       <img src="img/yellowromb.png" alt="" class="bg">
       <div class="left">
         <div class="sect-title">
@@ -200,7 +212,7 @@
             <path d="M10.3754 13.2324L6.62538 16.9824V0.684082H5.37538V16.9824L1.62538 13.2324L0.741211 14.1166L6.00038 19.3749L11.2587 14.1166L10.3745 13.2324H10.3754Z" fill="white"/>
             </svg>
             
-                        <a href="" class="btn">
+                        <a href="#catalog" class="btn link">
                           Смотреть каталог
                         </a>
           
@@ -216,12 +228,12 @@
       </div>
       <div class="right">
         <div class="box">
-          <img src="img/door1.png" alt="">
-          <img src="img/door2.png" alt="">
-          <img src="img/door3.png" alt="">
+          <img class="link" href="#catalog" src="img/door1.png" alt="">
+          <img class="link" href="#catalog" src="img/door2.png" alt="">
+          <img class="link" href="#catalog" src="img/door3.png" alt="">
         </div>
 
-        <div class="video-btn">
+        <div class="video-btn link" href="#video">
             <span>Смотреть видео</span>
             <svg width="239" height="257" viewBox="0 0 239 257" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
@@ -298,7 +310,7 @@
           <path d="M10.3754 13.2324L6.62538 16.9824V0.684082H5.37538V16.9824L1.62538 13.2324L0.741211 14.1166L6.00038 19.3749L11.2587 14.1166L10.3745 13.2324H10.3754Z" fill="white"/>
           </svg>
           
-                      <a href="" class="btn">
+                      <a href="#catalog" class="btn link">
                         Смотреть каталог
                       </a>
         
@@ -323,7 +335,7 @@
 
   
   
-       <h2 class="title">
+       <h2 class="title wow fadeInUp" data-wow-offset="100">
         Наши полотенцесушители в цифрах
        </h2>
        <div class="box">
@@ -332,8 +344,8 @@
           </svg>
          <div class="item">
            <div class="num">
-             <span>50</span>
-             <p>на 50%</p>
+             <span class="count1">50</span>
+             <p>на <span class="count1">50</span> %</p>
            </div>
            <div class="text">
             <p>экономнее,  <br>
@@ -344,8 +356,8 @@
 
          <div class="item">
           <div class="num">
-            <span>30</span>
-            <p>30 лет</p>
+            <span class="count2">30</span>
+            <p><span class="count2">30</span> лет</p>
           </div>
           <div class="text">
             <p>долгосрочность  <br>
@@ -355,8 +367,8 @@
 
          <div class="item">
           <div class="num">
-            <span>5</span>
-            <p>5 лет</p>
+            <span class="count3">5</span>
+            <p><span class="count3">5</span> лет</p>
           </div>
           <div class="text">
             <p>гарантия от 5 лет  <br>
@@ -375,13 +387,13 @@
          <img src="img/ukraine.png" alt="">
        </div>
        <div class="title">
-         <h2>Наши преимущества</h2>
-         <p>Выбирая полотенцесушители нашей марки, 
+         <h2  class="wow fadeInLeft" data-wow-offset="100">Наши преимущества</h2>
+         <p class="wow fadeInRight" data-wow-offset="100">Выбирая полотенцесушители нашей марки, 
           Вы гарантированно приобретаете надежного помощника для вашего дома!
           </p>
        </div>
        <div class="box">
-        <div class="item">
+        <div class="item wow fadeInUp" data-wow-offset="100">
           <div class="plus">
             <div class="box">
               <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -421,7 +433,7 @@
               не сжигает кислород</p>
         </div>
 
-        <div class="item">
+        <div class="item wow fadeInUp" data-wow-offset="100" data-wow-delay="0.1s">
           <div class="plus">
             <div class="box">
               <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -462,7 +474,7 @@
             не сжигает кислород</p>
       </div>
 
-      <div class="item">
+      <div class="item wow fadeInUp" data-wow-offset="100" data-wow-delay="0.2s">
         <div class="plus">
           <div class="box">
             <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -495,7 +507,7 @@
           не сжигает кислород</p>
     </div>
 
-    <div class="item">
+    <div class="item wow fadeInUp" data-wow-offset="100" data-wow-delay="0.3s">
       <div class="plus">
         <div class="box">
           <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -551,11 +563,11 @@
             полотенцесушитель/обогреватель</h2>
          </div>
          <div class="box">
-           <div class="img">
+           <div class="img wow fadeInLeft" data-wow-offset="100">
              <img src="img/listimg1.png" alt="">
            </div>
            <div class="listbox">
-             <div class="item">
+             <div class="item wow fadeInLeft" data-wow-offset="100">
                
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -564,7 +576,7 @@
                 <p>Бесплатная доставка Новой почтой.</p>  
              </div>
 
-             <div class="item">
+             <div class="item wow fadeInLeft" data-wow-offset="100">
                
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -573,7 +585,7 @@
               <p>Самостоятельный монтаж.</p>  
            </div>
 
-           <div class="item">
+           <div class="item wow fadeInLeft" data-wow-offset="100">
                
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -582,7 +594,7 @@
             <p>Простая установка.</p>  
          </div>
 
-         <div class="item">
+         <div class="item wow fadeInLeft" data-wow-offset="100">
                
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -591,7 +603,7 @@
           <p>Равномерный прогрев помещения.</p>  
        </div>
 
-       <div class="item">
+       <div class="item wow fadeInLeft" data-wow-offset="100">
                
         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -600,7 +612,7 @@
         <p>Энергосбережение.</p>  
      </div>
 
-     <div class="item">
+     <div class="item wow fadeInLeft" data-wow-offset="100">
                
       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -609,7 +621,7 @@
       <p>Минимальные потери тепла. </p>  
       </div>
 
-      <div class="item">
+      <div class="item wow fadeInLeft" data-wow-offset="100">
                
         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -618,7 +630,7 @@
         <p>Безопасность. </p>  
         </div>
 
-        <div class="item">
+        <div class="item wow fadeInLeft" data-wow-offset="100">
                
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -627,7 +639,7 @@
           <p>Качественный, экологичный материал.</p>  
           </div>
 
-          <div class="item">
+          <div class="item wow fadeInLeft" data-wow-offset="100">
                
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.4824 11.0804V12.0004C22.4812 14.1568 21.7829 16.255 20.4918 17.9822C19.2006 19.7093 17.3857 20.9728 15.3178 21.5843C13.2498 22.1957 11.0397 22.1223 9.01689 21.3749C6.9941 20.6276 5.26708 19.2465 4.09338 17.4374C2.91969 15.6284 2.36221 13.4884 2.5041 11.3367C2.64598 9.18492 3.47963 7.13668 4.8807 5.49743C6.28177 3.85817 8.17521 2.71574 10.2786 2.2405C12.382 1.76526 14.5827 1.98269 16.5524 2.86035" stroke="#009343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -636,7 +648,7 @@
             <p>Длительный срок службы.</p>  
             </div>
 
-            <a href="" class="btn-more">
+            <a modal-more-open class="btn-more">
               Узнать больше
             </a>
            </div>
@@ -658,7 +670,7 @@
                  <div class="box">
                    
                    <div class="listbox">
-                     <div class="item">
+                     <div class="item wow fadeInRight" data-wow-offset="100">
                        
                         
                           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -670,7 +682,7 @@
                         <p>Платная доставка.</p>  
                      </div>
 
-                     <div class="item">
+                     <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -683,7 +695,7 @@
                  </div>
 
 
-                 <div class="item">
+                 <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -696,7 +708,7 @@
                     </div>
 
 
-                    <div class="item">
+                    <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -711,7 +723,7 @@
                      <div class="line"></div>
         
                     
-                     <div class="item">
+                     <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                       <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -723,7 +735,7 @@
                     <p>Быстрый износ тэны.</p>  
                         </div>
 
-                        <div class="item">
+                        <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -735,7 +747,7 @@
                         <p>Кратковременный прогрев.</p>  
                             </div>
 
-                            <div class="item">
+                            <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -747,7 +759,7 @@
                             <p>Большой расход электроенергии.</p>  
                                 </div>
 
-                                <div class="item">
+                                <div class="item  wow fadeInRight" data-wow-offset="100">
                        
                         
                                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -762,9 +774,9 @@
                     
                    </div>
 
-                   <div class="img">
+                   <div class="img wow fadeInRight" data-wow-offset="100">
                     <img src="img/listimg2.png" alt="">
-                    <img src="img/listimg3.png" alt="">
+                    <img src="img/Zmeevik.png" alt="">
                   </div>
                  </div>
         </div>
@@ -775,23 +787,23 @@
      <div class="holder">
        <img src="img/ukrainemini.png" alt="">
        <div class="text">
-         <h2>Бесплатная доставка 
+         <h2  class="wow fadeInUp" data-wow-offset="100">Бесплатная доставка 
           по всей Украине</h2>
-          <a href="" class="btn-det">
+          <a modal-delivery-open class="btn-det wow fadeInUp" data-wow-offset="100">
             Подробнее
           </a>
        </div>
-       <div class="img">
+       <div class="img  wow fadeInRight" data-wow-offset="100">
          <img src="img/novaposhta.png" alt="">
        </div>
      </div>
    </section>
 
 
-   <section class="catalog">
-     <h2>Каталог нашей продукции</h2>
+   <section class="catalog" id="catalog">
+     <h2 class="wow fadeInUp" data-wow-offset="100">Каталог нашей продукции</h2>
      <div class="holder">
-        <div class="item">
+        <div class="item  wow fadeInUp" data-wow-offset="100">
           <div class="title">
             <h3><span>Керамический полотенцесушитель</span>/обогреватель  <br>
               <span class="yel">Teploceramic</span> TCMRA и TCM</h3>
@@ -800,31 +812,36 @@
             <div class="left">
               <div class="bigphotoSlider">
                 <div class="slide">
-                  <img src="img/cer1.png" alt="">
+                  <img src="img/term11.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer1.png" alt="">
+                  <img src="img/term3.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer1.png" alt="">
+                  <img src="img/term1.png" alt="">
                 </div>
-                <div class="slide">
-                  <img src="img/cer1.png" alt="">
-                </div>
+                
               </div>
     
               <div class="bigphotoSlider-nav">
                 <div class="slide active">
-                  <img src="img/cer4.png" alt="">
+                  <img src="img/term11.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer2.png" alt="">
+                  <img src="img/term3.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer3.png" alt="">
+                  <img src="img/term1.png" alt="">
                 </div>
-                <div class="slide">
-                  <img src="img/cer4.png" alt="">
+                <div class="slide" modal-video-open>
+                  <svg width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.3574 4.125C47.0012 1.7125 45.5293 1.26875 42.5324 1.1C39.5387 0.896875 32.0105 0.8125 25.4887 0.8125C18.9543 0.8125 11.423 0.896875 8.43242 1.09688C5.4418 1.26875 3.9668 1.70937 2.59805 4.125C1.20117 6.53437 0.482422 10.6844 0.482422 17.9906C0.482422 17.9969 0.482422 18 0.482422 18C0.482422 18.0063 0.482422 18.0094 0.482422 18.0094V18.0156C0.482422 25.2906 1.20117 29.4719 2.59805 31.8563C3.9668 34.2687 5.43867 34.7062 8.4293 34.9094C11.423 35.0844 18.9543 35.1875 25.4887 35.1875C32.0105 35.1875 39.5387 35.0844 42.5355 34.9125C45.5324 34.7094 47.0043 34.2719 48.3605 31.8594C49.7699 29.475 50.4824 25.2937 50.4824 18.0187C50.4824 18.0187 50.4824 18.0094 50.4824 18.0031C50.4824 18.0031 50.4824 17.9969 50.4824 17.9937C50.4824 10.6844 49.7699 6.53437 48.3574 4.125Z" fill="#F44336"/>
+                    <path d="M19.2324 27.375V8.625L34.8574 18L19.2324 27.375Z" fill="#FAFAFA"/>
+                    </svg>
+  
+                 <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5iH0h31amSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
                 </div>
               </div>
             </div>
@@ -853,7 +870,7 @@
                     <p class="inf">-</p>
                   </div>
                   <p class="inf price">1799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -866,7 +883,7 @@
                   <p class="inf">-</p>
                   </div>
                   <p class="inf price">2199 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -879,7 +896,7 @@
                   <p class="inf">-</p>
                  </div>
                   <p class="inf price">2799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="imgcol">
@@ -924,7 +941,7 @@
                     <p class="inf">-</p>
                   </div>
                   <p class="inf price">1799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -937,7 +954,7 @@
                   <p class="inf">-</p>
                   </div>
                   <p class="inf price">2199 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -950,7 +967,7 @@
                   <p class="inf">-</p>
                  </div>
                   <p class="inf price">2799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="imgcol">
@@ -973,40 +990,45 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item  wow fadeInUp" data-wow-offset="100">
           <div class="title">
-            <h3><span>Керамический полотенцесушитель</span>/обогреватель  <br>
-              Teploceramic TCMRA и TCM</h3>
+            <h3>Нержавеющий полотенцесушитель/
+              обогреватель <span>SunWay</span> SWTRA и SWT</h3>
           </div>
           <div class="box">
             <div class="left">
               <div class="bigphotoSlider">
                 <div class="slide">
-                  <img src="img/cer1.png" alt="">
+                  <img src="img/nerz1.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer1.png" alt="">
+                  <img src="img/nerz3.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer1.png" alt="">
+                  <img src="img/nerz4.png" alt="">
                 </div>
-                <div class="slide">
-                  <img src="img/cer1.png" alt="">
-                </div>
+                
               </div>
     
               <div class="bigphotoSlider-nav">
                 <div class="slide active">
-                  <img src="img/cer4.png" alt="">
+                  <img src="img/nerz1.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer2.png" alt="">
+                  <img src="img/nerz3.png" alt="">
                 </div>
                 <div class="slide">
-                  <img src="img/cer3.png" alt="">
+                  <img src="img/nerz4.png" alt="">
                 </div>
-                <div class="slide">
-                  <img src="img/cer4.png" alt="">
+                <div class="slide" modal-video-open>
+                  <svg width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.3574 4.125C47.0012 1.7125 45.5293 1.26875 42.5324 1.1C39.5387 0.896875 32.0105 0.8125 25.4887 0.8125C18.9543 0.8125 11.423 0.896875 8.43242 1.09688C5.4418 1.26875 3.9668 1.70937 2.59805 4.125C1.20117 6.53437 0.482422 10.6844 0.482422 17.9906C0.482422 17.9969 0.482422 18 0.482422 18C0.482422 18.0063 0.482422 18.0094 0.482422 18.0094V18.0156C0.482422 25.2906 1.20117 29.4719 2.59805 31.8563C3.9668 34.2687 5.43867 34.7062 8.4293 34.9094C11.423 35.0844 18.9543 35.1875 25.4887 35.1875C32.0105 35.1875 39.5387 35.0844 42.5355 34.9125C45.5324 34.7094 47.0043 34.2719 48.3605 31.8594C49.7699 29.475 50.4824 25.2937 50.4824 18.0187C50.4824 18.0187 50.4824 18.0094 50.4824 18.0031C50.4824 18.0031 50.4824 17.9969 50.4824 17.9937C50.4824 10.6844 49.7699 6.53437 48.3574 4.125Z" fill="#F44336"/>
+                    <path d="M19.2324 27.375V8.625L34.8574 18L19.2324 27.375Z" fill="#FAFAFA"/>
+                    </svg>
+  
+                 <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5iH0h31amSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
                 </div>
               </div>
             </div>
@@ -1035,7 +1057,7 @@
                     <p class="inf">-</p>
                   </div>
                   <p class="inf price">1799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -1048,7 +1070,7 @@
                   <p class="inf">-</p>
                   </div>
                   <p class="inf price">2199 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -1061,7 +1083,7 @@
                   <p class="inf">-</p>
                  </div>
                   <p class="inf price">2799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="imgcol">
@@ -1106,7 +1128,7 @@
                     <p class="inf">-</p>
                   </div>
                   <p class="inf price">1799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -1119,7 +1141,7 @@
                   <p class="inf">-</p>
                   </div>
                   <p class="inf price">2199 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="infocol">
@@ -1132,7 +1154,7 @@
                   <p class="inf">-</p>
                  </div>
                   <p class="inf price">2799 грн</p>
-                  <a href="" class="btn">Купить</a>
+                  <a modal-order-open class="btn">Купить</a>
 
                 </div>
                 <div class="imgcol">
@@ -1157,55 +1179,61 @@
      </div>
    </section>
 
-   <section class="gift">
+   <section class="gift" id="gift">
      <div class="holder">
        <div class="text">
-         <h2>ДАРИМ 500 грн</h2>
-         <p>Дарим 500 гривен каждому, за видео 
+         <h2  class="wow fadeInUp" data-wow-offset="100">ДАРИМ 500 грн</h2>
+         <p class="wow fadeInUp" data-wow-offset="100">Дарим 500 гривен каждому, за видео 
           установленного полотенцесушителя! 
           200 грн на карту и 300 грн на покупки.</p>
-          <a href="" class="btn-det">Подробнее</a>
+          <a modal-participate-open class="btn-det wow fadeInUp" data-wow-offset="100">Подробнее</a>
        </div>
-       <div class="img"><img src="img/phone.png" alt=""></div>
+       <div class="img wow fadeInRight" data-wow-offset="100"><img src="img/phone.png" alt=""></div>
      </div>
    </section>
 
-   <section class="catalog">
+   <section class="catalog" >
     <div class="holder">
-       <div class="item">
+       <div class="item  wow fadeInUp" data-wow-offset="100">
          <div class="title">
-           <h3><span>Керамический полотенцесушитель</span>/обогреватель  <br>
-             Teploceramic TCMRA и TCM</h3>
+           <h3><span>Стеклянный полотенцесушитель/
+            обогреватель <span>SunWay</span> SWGTRA и SWGT</h3>
          </div>
          <div class="box">
            <div class="left">
              <div class="bigphotoSlider">
                <div class="slide">
-                 <img src="img/cer1.png" alt="">
+                 <img src="img/stekl2.png" alt="">
                </div>
                <div class="slide">
-                 <img src="img/cer1.png" alt="">
+                 <img src="img/stekl4.png" alt="">
                </div>
                <div class="slide">
-                 <img src="img/cer1.png" alt="">
+                 <img src="img/stekl3.png" alt="">
                </div>
-               <div class="slide">
-                 <img src="img/cer1.png" alt="">
-               </div>
+               
              </div>
    
              <div class="bigphotoSlider-nav">
                <div class="slide active">
-                 <img src="img/cer4.png" alt="">
+                 <img src="img/stekl2.png" alt="">
                </div>
                <div class="slide">
-                 <img src="img/cer2.png" alt="">
+                 <img src="img/stekl4.png" alt="">
                </div>
                <div class="slide">
-                 <img src="img/cer3.png" alt="">
+                 <img src="img/stekl3.png" alt="">
                </div>
-               <div class="slide">
-                 <img src="img/cer4.png" alt="">
+               <div class="slide" modal-video-open>
+                 
+                  <svg width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.3574 4.125C47.0012 1.7125 45.5293 1.26875 42.5324 1.1C39.5387 0.896875 32.0105 0.8125 25.4887 0.8125C18.9543 0.8125 11.423 0.896875 8.43242 1.09688C5.4418 1.26875 3.9668 1.70937 2.59805 4.125C1.20117 6.53437 0.482422 10.6844 0.482422 17.9906C0.482422 17.9969 0.482422 18 0.482422 18C0.482422 18.0063 0.482422 18.0094 0.482422 18.0094V18.0156C0.482422 25.2906 1.20117 29.4719 2.59805 31.8563C3.9668 34.2687 5.43867 34.7062 8.4293 34.9094C11.423 35.0844 18.9543 35.1875 25.4887 35.1875C32.0105 35.1875 39.5387 35.0844 42.5355 34.9125C45.5324 34.7094 47.0043 34.2719 48.3605 31.8594C49.7699 29.475 50.4824 25.2937 50.4824 18.0187C50.4824 18.0187 50.4824 18.0094 50.4824 18.0031C50.4824 18.0031 50.4824 17.9969 50.4824 17.9937C50.4824 10.6844 49.7699 6.53437 48.3574 4.125Z" fill="#F44336"/>
+                    <path d="M19.2324 27.375V8.625L34.8574 18L19.2324 27.375Z" fill="#FAFAFA"/>
+                    </svg>
+  
+                 <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5iH0h31amSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
                </div>
              </div>
            </div>
@@ -1234,7 +1262,7 @@
                    <p class="inf">-</p>
                  </div>
                  <p class="inf price">1799 грн</p>
-                 <a href="" class="btn">Купить</a>
+                 <a modal-order-open class="btn">Купить</a>
 
                </div>
                <div class="infocol">
@@ -1247,7 +1275,7 @@
                  <p class="inf">-</p>
                  </div>
                  <p class="inf price">2199 грн</p>
-                 <a href="" class="btn">Купить</a>
+                 <a modal-order-open class="btn">Купить</a>
 
                </div>
                <div class="infocol">
@@ -1260,7 +1288,7 @@
                  <p class="inf">-</p>
                 </div>
                  <p class="inf price">2799 грн</p>
-                 <a href="" class="btn">Купить</a>
+                 <a modal-order-open class="btn">Купить</a>
 
                </div>
                <div class="imgcol">
@@ -1305,7 +1333,7 @@
                    <p class="inf">-</p>
                  </div>
                  <p class="inf price">1799 грн</p>
-                 <a href="" class="btn">Купить</a>
+                 <a modal-order-open class="btn">Купить</a>
 
                </div>
                <div class="infocol">
@@ -1318,7 +1346,7 @@
                  <p class="inf">-</p>
                  </div>
                  <p class="inf price">2199 грн</p>
-                 <a href="" class="btn">Купить</a>
+                 <a modal-order-open class="btn">Купить</a>
 
                </div>
                <div class="infocol">
@@ -1331,7 +1359,7 @@
                  <p class="inf">-</p>
                 </div>
                  <p class="inf price">2799 грн</p>
-                 <a href="" class="btn">Купить</a>
+                 <a modal-order-open class="btn">Купить</a>
 
                </div>
                <div class="imgcol">
@@ -1357,9 +1385,9 @@
   </section>
 
   <section class="interior">
-    <h2>Полотенцесушители в интерьере</h2>
+    <h2 class=" wow fadeInUp" data-wow-offset="100">Полотенцесушители в интерьере</h2>
     <div class="holder">
-      <div class="left">
+      <div class="left  wow fadeInLeft" data-wow-offset="100">
         <div class="prev">
           
 <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1372,19 +1400,19 @@
           <div class="slide">
             <p class="name">Teploceramic TCMRA600</p>
             <div class="img">
-              <img src="img/doorr1.png" alt="">
+              <img src="img/term2.png" alt="">
             </div>
           </div>
           <div class="slide">
             <p class="name">SunWay SWGТRA600</p>
             <div class="img">
-              <img src="img/doorr2.png" alt="">
+              <img src="img/stekl1.png" alt="">
             </div>
           </div>
           <div class="slide">
             <p class="name">SunWay SWTRA400</p>
             <div class="img">
-              <img src="img/doorr3.png" alt="">
+              <img src="img/nerz2.png" alt="">
             </div>
           </div>
         </div>
@@ -1398,7 +1426,7 @@
         </div>
       </div>
 
-      <div class="right">
+      <div class="right wow fadeInRight" data-wow-offset="100">
         <div class="imgslider">
           <div class="slide" style="background: url(img/img1.jpg) center / cover no-repeat;">
           </div>
@@ -1414,42 +1442,48 @@
     </div>
   </section>
 
-  <section class="knowwhy">
+  <section class="knowwhy" id="video">
     <div class="holder">
-      <h2>Узнайте почему полотенцесушители 
-        Sun Way и Teploceramicвыбирают десятки тысяч 
+      <h2 class="wow fadeInUp" data-wow-offset="100">Узнайте почему полотенцесушители 
+        Sun Way и Teploceramic выбирают десятки тысяч 
         украинцев.</h2>
         <div class="box">
           <div class="vid">
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-offset="100"  modal-video-open>
               
 <svg width="100" height="70" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M95.75 7.25C93.0375 2.425 90.0938 1.5375 84.1 1.2C78.1125 0.79375 63.0562 0.625 50.0125 0.625C36.9437 0.625 21.8813 0.79375 15.9 1.19375C9.91875 1.5375 6.96875 2.41875 4.23125 7.25C1.4375 12.0687 0 20.3688 0 34.9813C0 34.9938 0 35 0 35C0 35.0125 0 35.0188 0 35.0188V35.0312C0 49.5813 1.4375 57.9437 4.23125 62.7125C6.96875 67.5375 9.9125 68.4125 15.8938 68.8187C21.8813 69.1688 36.9437 69.375 50.0125 69.375C63.0562 69.375 78.1125 69.1687 84.1062 68.825C90.1 68.4187 93.0437 67.5438 95.7562 62.7188C98.575 57.95 100 49.5875 100 35.0375C100 35.0375 100 35.0188 100 35.0063C100 35.0063 100 34.9938 100 34.9875C100 20.3688 98.575 12.0687 95.75 7.25Z" fill="#F44336"/>
   <path d="M37.5 53.75V16.25L68.75 35L37.5 53.75Z" fill="#FAFAFA"/>
   </svg>
+
+ <div class="iframe">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5iH0h31amSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
   
             </div>
 
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-offset="100"  modal-video-open>
               
               <svg width="100" height="70" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M95.75 7.25C93.0375 2.425 90.0938 1.5375 84.1 1.2C78.1125 0.79375 63.0562 0.625 50.0125 0.625C36.9437 0.625 21.8813 0.79375 15.9 1.19375C9.91875 1.5375 6.96875 2.41875 4.23125 7.25C1.4375 12.0687 0 20.3688 0 34.9813C0 34.9938 0 35 0 35C0 35.0125 0 35.0188 0 35.0188V35.0312C0 49.5813 1.4375 57.9437 4.23125 62.7125C6.96875 67.5375 9.9125 68.4125 15.8938 68.8187C21.8813 69.1688 36.9437 69.375 50.0125 69.375C63.0562 69.375 78.1125 69.1687 84.1062 68.825C90.1 68.4187 93.0437 67.5438 95.7562 62.7188C98.575 57.95 100 49.5875 100 35.0375C100 35.0375 100 35.0188 100 35.0063C100 35.0063 100 34.9938 100 34.9875C100 20.3688 98.575 12.0687 95.75 7.25Z" fill="#F44336"/>
                 <path d="M37.5 53.75V16.25L68.75 35L37.5 53.75Z" fill="#FAFAFA"/>
                 </svg>
-                
+                <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Li1EIzx6lbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                           </div>
           </div>
           <div class="imgs certgallerylist">
-            <div class="img">
+            <div class="img wow fadeInUp" data-wow-offset="100" data-wow-delay="">
               <img src="img/cert1.jpg" alt="">
             </div>
-            <div class="img">
+            <div class="img wow fadeInUp" data-wow-offset="100" data-wow-delay="">
               <img src="img/cert2.jpg" alt="">
             </div>
-            <div class="img">
+            <div class="img wow fadeInUp" data-wow-offset="100" data-wow-delay="0.2s">
               <img src="img/cert3.jpg" alt="">
             </div>
-            <div class="img">
+            <div class="img wow fadeInUp" data-wow-offset="100" data-wow-delay="0.2s">
               <img src="img/cert4.jpg" alt="">
             </div>
           </div>
@@ -1457,24 +1491,24 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="holder">
-      <h2>О компании</h2>
+      <h2 class="wow fadeInUp" data-wow-offset="100">О компании</h2>
       <img src="img/map.png" alt="">
       <div class="box">
         <div class="left">
-          <p>За 10 лет продуктивной работы мы создали свою производственную базу, изготовили 
+          <p class="wow fadeInUp" data-wow-offset="100">За 10 лет продуктивной работы мы создали свою производственную базу, изготовили 
             и передали нашим покупателям более миллиона инфракрасных обогревателей.</p>
-            <p><span>Teploceramic</span> — инфракрасные панели 
+            <p class="wow fadeInUp" data-wow-offset="100"><span>Teploceramic</span> — инфракрасные панели 
               на основе натурального  керамогранита;
               <span>SunWay</span> — металлические инфракрасные полотенцесушители/обогреватели 
               с программаторами.</p>
-              <p>Мы с радостью проконсультируем <br>
+              <p class="wow fadeInUp" data-wow-offset="100">Мы с радостью проконсультируем <br>
                 Вас по любому вопросу и окажем <br> экспертную поддержку!</p>
         </div>
 
         <div class="right">
-          <div class="item">
+          <div class="item wow fadeInRight" data-wow-offset="100">
             
 <svg width="70" height="64" viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M69.6749 60.5527L54.9615 36.6391C54.5591 35.9853 53.8607 35.595 53.093 35.595C52.3254 35.595 51.6269 35.9855 51.2248 36.6391L49.3146 39.7439C49.0174 40.2269 49.1681 40.8595 49.6511 41.1567C50.1344 41.4538 50.7667 41.3033 51.0641 40.8203L52.9743 37.7154C52.9844 37.699 53.0152 37.6489 53.0932 37.6489C53.1713 37.6489 53.2022 37.699 53.2123 37.7154L67.9257 61.629C67.9375 61.648 67.9687 61.6987 67.9287 61.7702C67.8888 61.8417 67.8292 61.8417 67.8068 61.8417H59.6583L36.8683 24.8022C36.6636 24.4694 36.382 24.2054 36.0537 24.0259C36.0541 24.026 36.0545 24.0263 36.0548 24.0264V17.0565C36.9094 17.2882 37.7419 17.3872 38.5564 17.3872C40.8986 17.3872 43.092 16.5731 45.2378 15.7765C48.2112 14.6728 51.0196 13.6303 54.0573 14.8485C54.449 15.0056 54.8916 14.9583 55.2412 14.7217C55.5914 14.485 55.8003 14.0913 55.8003 13.6689V2.06733C55.8003 1.556 55.4969 1.09649 55.0278 0.896883C51.1719 -0.747433 47.7917 0.507098 44.5229 1.72034C41.4607 2.85702 38.5684 3.93067 35.4191 2.52315C35.1012 2.3811 34.7333 2.40981 34.4413 2.59903C34.1492 2.78839 33.973 3.11268 33.973 3.46077V3.49891C33.9554 3.57534 33.9452 3.6545 33.9452 3.73626V24.0264C33.6175 24.2059 33.3362 24.4698 33.1316 24.8022L22.3118 42.3873L18.7752 36.6393C18.373 35.9855 17.6745 35.5951 16.9068 35.5951C16.1393 35.5951 15.4408 35.9855 15.0385 36.6393L0.325003 60.5527C-0.0910322 61.2288 -0.108806 62.0794 0.278382 62.7724C0.665569 63.4654 1.39934 63.8959 2.19326 63.8959H67.8066C68.6006 63.8959 69.3343 63.4654 69.7215 62.7724C70.1089 62.0794 70.091 61.2287 69.6749 60.5527ZM36.0271 4.91888C39.3516 5.83079 42.3377 4.72241 45.2378 3.64589C48.1068 2.58085 50.8251 1.57214 53.7464 2.60108V12.5795C50.4118 11.6651 47.4227 12.7747 44.523 13.851C41.6588 14.9141 38.9431 15.9221 36.0271 14.8963V4.91888ZM12.7534 61.8419L16.2768 56.1154C16.574 55.6324 16.4234 54.9998 15.9403 54.7026C15.4572 54.4055 14.8247 54.556 14.5275 55.039L10.3418 61.8419H2.1934C2.17098 61.8419 2.11137 61.8419 2.07145 61.7704C2.03153 61.6989 2.06256 61.6483 2.07446 61.6291L16.788 37.7157C16.7981 37.6993 16.8289 37.6492 16.9069 37.6492C16.985 37.6492 17.0158 37.6993 17.0259 37.7157L21.1061 44.3471L17.032 50.9685C16.7348 51.4515 16.8855 52.0841 17.3685 52.3813C17.8518 52.6786 18.4843 52.5279 18.7814 52.0449L34.8811 25.8784C34.8912 25.862 34.922 25.812 35 25.812C35.078 25.812 35.1087 25.862 35.119 25.8784L57.2466 61.8419H12.7534Z" fill="#FEBD00"/>
@@ -1482,7 +1516,7 @@
 <p>Миссия — помочь людям обрести стабильное тепло 
   и комфортный микроклимат.</p>  
           </div>
-          <div class="item">
+          <div class="item wow fadeInRight" data-wow-offset="100">
             
 <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M57.8098 8.75891C57.7621 8.59414 57.6709 8.44526 57.5458 8.32787C57.4207 8.21048 57.2663 8.12891 57.0989 8.09172L51.2336 6.76664L49.9086 0.901409C49.8709 0.734381 49.7891 0.580522 49.6717 0.455894C49.5543 0.331267 49.4056 0.240439 49.2411 0.192892C49.0766 0.145346 48.9024 0.142824 48.7366 0.185589C48.5708 0.228355 48.4195 0.31484 48.2985 0.436017L41.5528 7.18282C35.8445 3.73827 29.0729 2.50223 22.5157 3.70794C15.9586 4.91366 10.0696 8.47774 5.95998 13.7276C1.85038 18.9774 -0.195521 25.5499 0.208361 32.2048C0.612242 38.8596 3.43797 45.1364 8.1523 49.8507C12.8666 54.5651 19.1435 57.3908 25.7983 57.7947C32.4531 58.1986 39.0256 56.1526 44.2754 52.0431C49.5253 47.9335 53.0893 42.0444 54.2951 35.4873C55.5008 28.9302 54.2647 22.1585 50.8202 16.4502L57.5686 9.70172C57.6894 9.58047 57.7755 9.42905 57.8179 9.26324C57.8603 9.09742 57.8575 8.92327 57.8098 8.75891ZM52.83 30.5546C52.8292 36.1419 50.9846 41.5727 47.5824 46.0046C44.1802 50.4366 39.4105 53.6219 34.0133 55.0665C28.616 56.5111 22.8929 56.1342 17.7317 53.9942C12.5705 51.8543 8.25975 48.0709 5.46815 43.2311C2.67656 38.3912 1.56016 32.7654 2.29214 27.2263C3.02412 21.6872 5.56356 16.5445 9.51653 12.596C13.4695 8.64739 18.615 6.11368 24.1549 5.38787C29.6948 4.66207 35.3194 5.78473 40.1561 8.58172L37.0581 11.6798C37.0315 11.7101 37.0068 11.742 36.9843 11.7755C32.5109 9.49806 27.372 8.89089 22.4911 10.0631C17.6102 11.2353 13.3074 14.11 10.3562 18.1705C7.405 22.231 5.99888 27.211 6.39058 32.2154C6.78228 37.2198 8.94611 41.9203 12.4932 45.4722C16.0402 49.0241 20.7378 51.1943 25.7417 51.5928C30.7455 51.9913 35.7274 50.592 39.7919 47.6463C43.8564 44.7006 46.737 40.4018 47.9158 35.5225C49.0947 30.6432 48.4945 25.5034 46.2232 21.027C46.2583 21.0021 46.2918 20.9749 46.3232 20.9455L49.4213 17.8474C51.6585 21.7083 52.8345 26.0924 52.83 30.5546ZM43.952 20.8673C46.3023 24.8795 47.11 29.6107 46.2238 34.1754C45.3377 38.7401 42.8185 42.8255 39.1377 45.6669C35.4569 48.5084 30.8668 49.9111 26.2265 49.6126C21.5862 49.3141 17.2136 47.3349 13.9272 44.0453C10.6408 40.7557 8.66574 36.3813 8.37172 31.7407C8.0777 27.1 9.48485 22.5113 12.3298 18.8332C15.1748 15.1552 19.2626 12.6399 23.8282 11.7582C28.3937 10.8764 33.1241 11.6887 37.1341 14.0428L38.142 18.5075L37.1751 19.4744C34.2918 16.9424 30.5368 15.631 26.7041 15.8174C22.8714 16.0038 19.2614 17.6734 16.6373 20.4732C14.0133 23.2731 12.581 26.9836 12.6431 30.8203C12.7053 34.6571 14.2571 38.3193 16.9704 41.0326C19.6838 43.746 23.3459 45.2978 27.1827 45.3599C31.0194 45.4221 34.73 43.9897 37.5298 41.3657C40.3296 38.7417 41.9992 35.1317 42.1856 31.2989C42.372 27.4662 41.0606 23.7112 38.5286 20.8279L39.4955 19.861L43.952 20.8673ZM31.5636 30.5546C31.567 31.4695 31.2666 32.3596 30.7094 33.0853C30.1523 33.8109 29.37 34.3311 28.4853 34.5642C27.6006 34.7972 26.6636 34.73 25.8213 34.373C24.9789 34.016 24.2789 33.3894 23.8312 32.5916C23.3834 31.7938 23.2131 30.8699 23.3471 29.9649C23.4811 29.0599 23.9118 28.225 24.5715 27.5912C25.2313 26.9574 26.0828 26.5605 26.9924 26.4629C27.9021 26.3653 28.8184 26.5725 29.5976 27.0519L26.7714 29.8781C26.68 29.9664 26.6071 30.0721 26.557 30.1888C26.5068 30.3056 26.4805 30.4312 26.4794 30.5583C26.4783 30.6853 26.5025 30.8114 26.5507 30.929C26.5988 31.0466 26.6699 31.1534 26.7598 31.2432C26.8497 31.3331 26.9565 31.4041 27.0742 31.4522C27.1918 31.5003 27.3178 31.5245 27.4449 31.5234C27.572 31.5222 27.6975 31.4958 27.8143 31.4456C27.931 31.3955 28.0366 31.3225 28.1249 31.2311L30.9511 28.4049C31.3513 29.0505 31.5634 29.795 31.5636 30.5546ZM30.9752 25.6743C29.7422 24.7812 28.2179 24.3854 26.7061 24.566C25.1943 24.7465 23.8061 25.49 22.818 26.6483C21.8299 27.8067 21.3146 29.2948 21.3747 30.8161C21.4348 32.3374 22.0659 33.7803 23.1423 34.8571C24.2186 35.9338 25.6612 36.5655 27.1825 36.6263C28.7038 36.687 30.1921 36.1722 31.3509 35.1846C32.5096 34.197 33.2537 32.8091 33.4348 31.2974C33.6159 29.7857 33.2208 28.2612 32.3282 27.0278L37.1724 22.1836C39.3429 24.7053 40.4514 27.9701 40.265 31.292C40.0785 34.614 38.6116 37.7343 36.1725 39.9972C33.7334 42.2601 30.5121 43.4894 27.1856 43.4268C23.859 43.3642 20.6863 42.0145 18.3341 39.6613C15.9819 37.3082 14.6335 34.1349 14.5722 30.8083C14.5109 27.4817 15.7415 24.2609 18.0054 21.8227C20.2694 19.3846 23.3902 17.9189 26.7122 17.7338C30.0342 17.5487 33.2986 18.6585 35.8194 20.8301L30.9752 25.6743ZM48.9368 15.6249L45.3449 19.2163L44.8062 19.0949L44.7854 19.0899L39.9921 18.0109L38.784 12.6609L48.4265 3.01672L49.5022 7.77782C49.5421 7.95432 49.6312 8.11591 49.7591 8.24387C49.8871 8.37182 50.0487 8.4609 50.2252 8.50079L54.9863 9.57649L48.9368 15.6249Z" fill="#FEBD00"/>
@@ -1491,7 +1525,7 @@
   обогреватели. </p>  
           </div>
 
-          <div class="item">
+          <div class="item wow fadeInRight" data-wow-offset="100">
             <img src="img/logos.png" alt="">
           </div>
         </div>
@@ -1501,7 +1535,7 @@
 
   <section class="clients">
     <div class="holder">
-        <h2>Что говорят наши клиенты</h2>
+        <h2 class="wow fadeInUp" data-wow-offset="100">Что говорят наши клиенты</h2>
       <div class="arrows">
           <div class="prev">
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1519,7 +1553,7 @@
             </div>
       </div>
 
-      <div class="clientsSlider">
+      <div class="clientsSlider wow fadeInUp" data-wow-offset="100">
         <div class="slide">
             <div class="img">
               <img src="img/p1.jpg" alt="">
@@ -1888,11 +1922,11 @@
   </section>
 
 
-  <footer>
+  <footer id="contacts">
     <div class="holder">
-      <h2>Связаться с нами</h2>
+      <h2 class="wow fadeInUp" data-wow-offset="100">Связаться с нами</h2>
       <div class="box">
-        <div class="form">
+        <div class="form wow fadeInLeft" data-wow-offset="100">
           <form action="" method="post">
             <div class="box" id="personal">
               <div class="inputs">
@@ -1918,7 +1952,7 @@
           </form>
         </div>
 
-        <div class="contacts">
+        <div class="contacts wow fadeInUp" data-wow-offset="100">
           <div class="item">
             
 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1949,7 +1983,7 @@
                       </div>
         </div>
 
-        <div class="socials">
+        <div class="socials wow fadeInRight" data-wow-offset="100">
           <a href="">
             <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M39.3824 0.973389C38.8938 0.375855 38.162 0.046875 37.3215 0.046875C36.8647 0.046875 36.3807 0.143005 35.8832 0.33313L2.02399 13.2582C0.227114 13.944 -0.0148908 14.973 0.000673131 15.5254C0.0162371 16.0778 0.316225 17.0916 2.14911 17.6748C2.1601 17.6781 2.17108 17.6815 2.18207 17.6845L9.20538 19.6944L13.0036 30.5556C13.5215 32.0363 14.6839 32.9561 16.0377 32.9561C16.8912 32.9561 17.7308 32.5985 18.4656 31.9222L22.8098 27.9223L29.1108 32.9958C29.1114 32.9964 29.1123 32.9967 29.1129 32.9973L29.1727 33.0456C29.1782 33.0498 29.184 33.0544 29.1895 33.0587C29.8899 33.6019 30.6544 33.8888 31.4011 33.8891H31.4014C32.8605 33.8891 34.0223 32.809 34.3607 31.1379L39.9085 3.74408C40.1313 2.64453 39.9445 1.66065 39.3824 0.973389ZM11.5549 19.3126L25.105 12.3903L16.6678 21.3555C16.5296 21.5023 16.4316 21.682 16.3834 21.8776L14.7565 28.4676L11.5549 19.3126ZM16.8778 30.198C16.8217 30.2495 16.7652 30.2956 16.7087 30.338L18.2181 24.2247L20.9638 26.4357L16.8778 30.198ZM37.6114 3.27869L32.0637 30.6728C32.0103 30.935 31.8397 31.545 31.4011 31.545C31.1844 31.545 30.9122 31.4269 30.6336 31.2124L23.4937 25.4635C23.4928 25.4625 23.4916 25.4616 23.4904 25.461L19.242 22.04L31.4432 9.0752C31.8339 8.66016 31.8693 8.02448 31.5272 7.56855C31.1848 7.11261 30.5643 6.96918 30.0568 7.22858L9.98908 17.4807L2.87024 15.4439L36.7191 2.52277C37.0051 2.41351 37.2046 2.39063 37.3215 2.39063C37.3932 2.39063 37.5208 2.39917 37.5681 2.45746C37.6304 2.53345 37.7097 2.79254 37.6114 3.27869Z" fill="#FEBD00"/>
@@ -1967,7 +2001,7 @@
     </div>
 
     <div class="footer-btm">
-      <div class="clmnlogos">
+      <div class="clmnlogos  wow fadeInUp" data-wow-offset="100">
         <a href=""><img src="img/logos.png" alt=""></a>
         <div class="socials">
           <span>Мы в соц сетях</span>
@@ -1986,7 +2020,7 @@
         </div>
       </div>
 
-      <div class="clmnnav">
+      <div class="clmnnav  wow fadeInUp" data-wow-offset="100">
         <a href="">Каталог</a>
         <a href="">Видео/Сертификаты</a>
         <a href="">Контакты</a>
@@ -1994,7 +2028,7 @@
         <a href="">Дарим 500грн</a>
 
       </div>
-      <div class="clmndelivery">
+      <div class="clmndelivery  wow fadeInUp" data-wow-offset="100">
         <div class="box"><p class="title">Способ доставки</p>
           <img src="img/pashtalogo.png" alt="">
           <span>Возможен самовывоз</span></div>
@@ -2015,14 +2049,14 @@
           </div>
       </div>
 
-      <div class="clmnpay">
+      <div class="clmnpay  wow fadeInUp" data-wow-offset="100">
         <p class="title">Способ оплаты</p>
         <img src="img/mono.png" alt="">
         <img src="img/privat.png" alt="">
         <img src="img/pay.png" alt="">
       </div>
 
-      <div class="clmnplace">
+      <div class="clmnplace  wow fadeInUp" data-wow-offset="100">
         <p class="title">Местоположение</p>
         <p>Украина
           Киев, ул. Семена Скляренко, 9</p>
@@ -2045,7 +2079,7 @@
     </div>
   </footer>
 
-  <div class="modal modal-more">
+  <div class="modal modal-more ">
     <div class="holder">
       <h2>Узнайте больше о нашей продукции</h2>
       <div class="modal-box">
@@ -2087,7 +2121,7 @@
     </div>
   </div>
 
-  <div class="modal modal-delivery">
+  <div class="modal modal-delivery ">
     <div class="holder">
       <h2>Подробнее о доставке</h2>
       <div class="modal-box">
@@ -2129,7 +2163,7 @@
     </div>
   </div>
 
-  <div class="modal modal-order">
+  <div class="modal modal-order ">
     <div class="holder">
       <h2>Заказать товар</h2>
       <div class="modal-box">
@@ -2168,13 +2202,13 @@
 
                       <div class="summ">
                         <p>Итого:</p>
-                        <p>3399<span>грн</span> </p>
+                        <p class="summval">3399 грн</p>
                       </div>
                       
                     </div>
                   </div>
         
-                  <button type="submit">Оставить заявку</button>
+                  <button type="submit">Оформить заказ</button>
                 </form>
               </div>   
       </div>
@@ -2281,7 +2315,7 @@
                   Требования к ролику:
 
                  </p>
-                 <p>1. Качество видео – от 480p. <br> 2. На видео не должно быть ваших личных данных. <br> 3. Формат названия вашего видео на ресурсе YouTube – «инфракрасный полотенцесушитель Sunway ****» Где **** - это модель полотенцесушителя. <br> 4. Длительность видео – от 1 минуты до 6 минут. <br> 5. Ссылка на товар в описании к видео на YouTube (ссылка должна вести именно сайт производителя. То есть выбрать товар из раздела. <br> 6. Видео должно быть широкоформатным.</p>
+                 <p>1. Качество видео – от <span style="font-weight: bold;">480p</span>. <br> 2. На видео не должно быть ваших личных данных. <br> 3. Формат названия вашего видео на ресурсе YouTube – «инфракрасный полотенцесушитель Sunway ****» Где **** - это модель полотенцесушителя. <br> 4. Длительность видео – от 1 минуты до 6 минут. <br> 5. Ссылка на товар в описании к видео на YouTube (ссылка должна вести именно сайт производителя. То есть выбрать товар из раздела. <br> 6. Видео должно быть широкоформатным.</p>
                </div>
                <div class="form">
                 <form action="" method="post">
@@ -2309,9 +2343,54 @@
                     </div>
                   </div>
         
-                  <button type="submit">Оставить заявку</button>
+                  <button type="submit">Узнать подробнее</button>
                 </form>
               </div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-thanks">
+    <div class="holder">
+      
+      <div class="modal-box">
+        <div class="close">
+       
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M52.5 17.5L17.5 52.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 17.5L52.5 52.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+               </div>
+
+               <div class="thanks">
+                <h2>Участвовать</h2>
+                <p>В ближайшее время с Вами свяжеться
+                  наш менеджер для уточнения деталей</p>
+               </div>  
+               <span class="goback">
+                Вернуться на сайт
+              </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-video">
+    <div class="holder">
+      
+      <div class="modal-box">
+        <div class="close">
+       
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M52.5 17.5L17.5 52.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 17.5L52.5 52.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+               </div>
+<div class="video">
+
+</div>
+               
       </div>
     </div>
   </div>
@@ -2320,7 +2399,12 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="libs/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
   <script src="libs/slick.min.js"></script>
+  <script src="libs/spincrement.js"></script>
   <script src="js/scripts.all.js"></script>
 </body>
 </html>
