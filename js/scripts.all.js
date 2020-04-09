@@ -28,7 +28,8 @@ $(document).ready(function(){
         speed: 300,
         fade: true,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        lazyLoad: 'ondemand'
       });
 
       $('.doorSlider').slick({
@@ -41,7 +42,8 @@ $(document).ready(function(){
         fade: true,
         slidesToShow: 1,
         adaptiveHeight: true,
-        asNavFor: '.imgslider'
+        asNavFor: '.imgslider',
+        lazyLoad: 'ondemand'
       });
 
       $('.imgslider').slick({
@@ -64,7 +66,8 @@ $(document).ready(function(){
         nextArrow: '.certsliderbox .next',
         fade: true,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        lazyLoad: 'ondemand'
       });
 
       $('.clientsSlider').slick({
