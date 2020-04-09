@@ -155,6 +155,7 @@ $('[modal-order-open]').on('click',function(){
   let val = $(this).parent().find('.price').text();
   console.log(val);
   $('.modal-order').find('.summval').text(val);
+  $('.modal-order').find('.summvalval').val(val);
   $('.modal-order').addClass('active');
 });
 
@@ -204,4 +205,10 @@ function countup(className) {
 
       
 });
+
+
+
+
+
+
 },{}]},{},[1]);
